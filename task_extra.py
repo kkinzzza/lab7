@@ -16,9 +16,9 @@ dot, = plt.plot([0], [np.sin(0)], 'ro')
 
 def func(i):
     dot.set_data(i, np.sin(i))
-    return dot,  # return the unpacked tuple
+    return dot,
 
 
-animation = FuncAnimation(fig, func, frames=np.arange(-2 * np.pi, 2 * np.pi, 0.1), interval=20, repeat=True)
+animation = FuncAnimation(fig, func, frames=np.arange(-2 * np.pi, 2 * np.pi, 0.1), interval=20, repeat=False)
 writer = PillowWriter(fps=30)
 animation.save("sin_function.gif", writer=writer)
