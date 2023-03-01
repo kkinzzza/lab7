@@ -13,7 +13,7 @@ with open('data1.csv', encoding='utf8') as file:  # открываем файл,
         time = np.append(time, float(row[0]))
         throttle_valve = np.append(throttle_valve, int(row[3]))
         fuel_consumption = np.append(fuel_consumption, float(row[17]))
-    fig = plt.figure(figsize=(50, 50))  # создаем окно
+    fig = plt.figure()  # создаем окно
     ax1 = plt.subplot(221)  # добавляем систему координат для графика, в скобках указываем позицию в окне
     ax1.plot(time, throttle_valve, color='red')  # создаем график зависимости положения дрос. засл. от времени
     ax1.grid()  # на систему координат накладываем сетку
