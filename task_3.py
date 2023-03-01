@@ -16,4 +16,4 @@ ax.set_xlabel('x')  # указываем названия осей
 ax.set_ylabel('y')
 ax.set_zlabel('z')
 fig.suptitle('График функции:', fontsize=14)  # указываем заголовок
-plt.show()
+plt.show()  # команда необходима для показа окна с графиками
